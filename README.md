@@ -27,4 +27,6 @@ shiny::runApp(".", host = "127.0.0.1", port = 3840)
 
 **Live demo:** https://elenna-shine-shiny.shinyapps.io/shiny_recurrence_app/
 
+**Project website:** https://ailinnastar.github.io/luad-recurrence-metastasis/
+
 See each subfolder's README for full reproduction instructions.
