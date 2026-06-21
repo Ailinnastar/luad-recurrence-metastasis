@@ -1,0 +1,56 @@
+body {
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  text-align: left;
+}
+
+table,
+th,
+td,
+pre,
+code,
+figcaption {
+  text-align: left;
+}
+
+.report-table-toggle {
+  border: 1px solid #cfdadd;
+  border-radius: 6px;
+  background: #f7fafb;
+  margin: 1rem 0 1.25rem;
+  padding: 0.35rem 0.65rem;
+}
+
+.report-table-toggle summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #225f55;
+  padding: 0.5rem 0.25rem;
+}
+
+.report-table-toggle[open] {
+  overflow-x: auto;
+}
+
+.report-table-toggle table {
+  margin-top: 0.75rem;
+  min-width: 1080px;
+}
+
+p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+.workflow-html {
+  overflow-x: auto !important;
+  max-width: 100%;
+}
+
+.workflow-viewport {
+  overflow-x: auto !important;
+  width: 100% !important;
+}

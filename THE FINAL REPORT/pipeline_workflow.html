@@ -1,0 +1,295 @@
+<style>
+  .workflow-html {
+    --ink: #17242c;
+    --muted: #596870;
+    --line: #8999a1;
+    --paper: #fffdf0;
+    --stage-border: #abb83a;
+    --green: #2b6f62;
+    --green-soft: #e8f4ef;
+    --blue: #2f6f9f;
+    --blue-soft: #eaf3fb;
+    --purple: #7457a8;
+    --purple-soft: #f1ecfb;
+    --orange: #c36a2d;
+    --orange-soft: #fff0e4;
+    --red: #bd4f63;
+    --red-soft: #fdebf0;
+    --wf-w: 1420;
+    --wf-h: 2265;
+    container-type: inline-size;
+    container-name: workflow;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 0.25rem;
+    overflow: hidden;
+  }
+
+  .workflow-viewport {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: calc(100cqw * var(--wf-h) / var(--wf-w));
+  }
+
+  .workflow-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1420px;
+    height: 2265px;
+    margin: 0;
+    transform: scale(calc(100cqw / var(--wf-w)));
+    transform-origin: top left;
+    background:
+      linear-gradient(90deg, rgba(23,36,44,0.035) 1px, transparent 1px),
+      linear-gradient(180deg, rgba(23,36,44,0.025) 1px, transparent 1px),
+      #ffffff;
+    background-size: 48px 48px;
+    border: 1px solid #dce4e7;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(21, 34, 42, 0.08);
+    font-family: Inter, Arial, sans-serif;
+    color: var(--ink);
+  }
+
+  .workflow-connectors {
+    position: absolute;
+    inset: 0;
+    width: 1420px;
+    height: 2265px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .wf-stage {
+    position: absolute;
+    z-index: 2;
+    border: 2px solid var(--stage-border);
+    background: rgba(255, 253, 218, 0.86);
+    border-radius: 3px;
+    padding: 20px 24px 22px;
+    box-sizing: border-box;
+  }
+
+  .wf-stage-title {
+    position: absolute;
+    top: -15px;
+    left: 22px;
+    right: 22px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #425022;
+    background: var(--paper);
+    border: 1px solid var(--stage-border);
+    border-radius: 3px;
+    padding: 4px 8px;
+  }
+
+  .wf-node {
+    position: relative;
+    width: fit-content;
+    min-width: 150px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 9px 12px;
+    border-radius: 3px;
+    border: 2px solid currentColor;
+    background: #ffffff;
+    font-size: 12px;
+    line-height: 1.22;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .wf-node strong {
+    display: block;
+    font-size: 12.5px;
+    margin-bottom: 2px;
+  }
+
+  .wf-node.small {
+    min-width: 67px;
+    max-width: 72px;
+    padding: 6px 4px;
+    font-size: 9px;
+  }
+
+  .wf-node.wide {
+    min-width: 255px;
+  }
+
+  .wf-node.xwide {
+    min-width: 315px;
+  }
+
+  .wf-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 10px;
+  }
+
+  .wf-arrow-down {
+    width: 2px;
+    height: 22px;
+    margin: 4px auto;
+    background: var(--line);
+    position: relative;
+  }
+
+  .wf-arrow-down::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    bottom: -1px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 9px solid var(--line);
+  }
+
+  .wf-node.green { color: var(--green); background: var(--green-soft); }
+  .wf-node.blue { color: var(--blue); background: var(--blue-soft); }
+  .wf-node.purple { color: var(--purple); background: var(--purple-soft); }
+  .wf-node.orange { color: var(--orange); background: var(--orange-soft); }
+  .wf-node.red { color: var(--red); background: var(--red-soft); }
+  .wf-node.gray { color: #54636a; background: #f2f6f7; }
+
+  .stage-b { left: 50px; top: 40px; width: 370px; height: 450px; }
+  .stage-a { left: 940px; top: 240px; width: 430px; height: 520px; }
+  .stage-c { left: 430px; top: 500px; width: 460px; height: 1100px; padding: 14px 20px 20px; }
+  .stage-d { left: 380px; top: 1640px; width: 720px; height: 410px; padding: 14px 20px 14px; }
+  .stage-e { left: 380px; top: 2080px; width: 720px; height: 185px; padding: 12px 20px 12px; }
+
+  .stage-c .wf-node { min-width: 250px; }
+  .stage-d .wf-node { min-width: 280px; }
+  .stage-e .wf-node { min-width: 280px; }
+
+</style>
+
+<div class="workflow-html" aria-label="Detailed LUAD recurrence pipeline flowchart">
+  <div class="workflow-viewport">
+  <div class="workflow-canvas">
+    <svg class="workflow-connectors" viewBox="0 0 1420 2265" aria-hidden="true">
+      <defs>
+        <marker id="wf-arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L9,3 L0,6 Z" fill="#8999a1"></path>
+        </marker>
+      </defs>
+      <path d="M235 490 C235 515, 420 485, 430 545" fill="none" stroke="#8999a1" stroke-width="2.6" marker-end="url(#wf-arrow)"></path>
+      <path d="M940 610 C920 610, 900 620, 890 650" fill="none" stroke="#8999a1" stroke-width="2.6" marker-end="url(#wf-arrow)"></path>
+      <path d="M660 1600 L660 1640" fill="none" stroke="#8999a1" stroke-width="2.8" marker-end="url(#wf-arrow)"></path>
+      <path d="M740 2050 L740 2080" fill="none" stroke="#8999a1" stroke-width="2.8" marker-end="url(#wf-arrow)"></path>
+    </svg>
+
+    <section class="wf-stage stage-b">
+      <div class="wf-stage-title">B - Recurrence development cohorts</div>
+      <div class="wf-row">
+        <div class="wf-node small green">GSE31210</div>
+        <div class="wf-node small green">GSE30219</div>
+        <div class="wf-node small green">GSE37745</div>
+        <div class="wf-node small green">GSE50081</div>
+      </div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node green wide"><strong>Filter samples</strong>LUAD, recurrence 0/1, follow-up available</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node green wide"><strong>Harmonise clinical data</strong>Stage, age, sex, follow-up days</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node green wide"><strong>Expression processing</strong>Probe-to-gene average and log2 scale check</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node green wide"><strong>Saved training inputs</strong>e_merged_raw, f_merged_clean, p_merged_clean</div>
+    </section>
+
+    <section class="wf-stage stage-a">
+      <div class="wf-stage-title">A - Frozen metastasis signature</div>
+      <div class="wf-row">
+        <div class="wf-node small purple">GSE200563</div>
+        <div class="wf-node small purple">GSE271259</div>
+        <div class="wf-node small purple">GSE161116</div>
+        <div class="wf-node small purple">GSE248830</div>
+        <div class="wf-node small purple">GSE223499</div>
+      </div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node purple xwide"><strong>limma per GEO</strong>Brain metastasis versus primary lung; record logFC, FDR-adjusted p-value</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node purple wide"><strong>Merge by gene symbol</strong>Keep genes significant in at least one GEO</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node purple wide"><strong>Rank genes</strong>Mean absolute logFC across contributing studies</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node purple xwide"><strong>Freeze gene lists only</strong>top 5, 10, 15 metastasis symbols; no recurrence data used</div>
+    </section>
+
+    <section class="wf-stage stage-c">
+      <div class="wf-stage-title">C - Nested LODO CV per engine</div>
+      <div class="wf-node blue wide"><strong>Outer LODO split</strong>Hold out one recurrence GEO; train on the other three</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node blue wide"><strong>Train-only preprocessing</strong>ComBat batch correction on training cohorts only; scale held-out cohort using training mean and SD computed from ComBat-adjusted expression</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node blue wide"><strong>Inner 5-fold CV</strong>Evaluate kr x km grid: recurrence K and metastasis K in 5, 10, 15</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node blue wide"><strong>Fold-wise scores</strong>limma recurrence genes; refit metastasis weights using frozen A genes</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node blue wide"><strong>Feature matrix</strong>Stage, age, sex, Recurrence_score, Metastasis_score</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node blue xwide"><strong>Fit engine</strong>Penalized Cox, Lasso Cox, Ridge Cox, Elastic-net Cox, Random survival forest, XGBoost survival Cox, logistic regression; Cox models tune alpha by inner CV</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node blue wide"><strong>Score inner validation</strong>Harrell C-index on inner 5-fold CV folds</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node blue wide"><strong>Select kr/km</strong>Highest mean inner-CV C-index; ties prefer smaller signature</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node blue wide"><strong>Outer prediction</strong>Refit on outer train and predict held-out GEO once</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node blue wide"><strong>Per-engine output</strong>combo_lodocv_nested_tuned_by_holdout.tsv</div>
+    </section>
+
+    <section class="wf-stage stage-d">
+      <div class="wf-stage-title">D - Final model selection and external validation</div>
+      <div class="wf-node orange xwide"><strong>Aggregate inner-CV recommendations</strong>Choose one kr/km pair per engine without using GSE68465</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node orange xwide"><strong>Refit final model</strong>All development GEOs; recurrence and metastasis weights refit after K is selected</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node orange xwide"><strong>External validation</strong>Apply saved training preprocessing to GSE68465; no tuning or feature selection</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node orange xwide"><strong>Evaluation outputs</strong>Mean LODO C-index first; external C-index on GSE68465 second; write all_engines_all_results_combined.tsv</div>
+    </section>
+
+    <section class="wf-stage stage-e">
+      <div class="wf-stage-title">E - Shiny deployment</div>
+      <div class="wf-node red xwide"><strong>User inputs</strong>Clinical variables and required gene-expression values</div>
+      <div class="wf-arrow-down"></div>
+      <div class="wf-node red xwide"><strong>Output</strong>Estimated recurrence-risk probability</div>
+    </section>
+  </div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  function fitWorkflow(root) {
+    var vp = root.querySelector(".workflow-viewport");
+    var canvas = root.querySelector(".workflow-canvas");
+    if (!vp || !canvas) return;
+    var w = root.clientWidth || 1000;
+    var scale = w / 1420;
+    canvas.style.transform = "scale(" + scale + ")";
+    vp.style.height = (2265 * scale) + "px";
+  }
+
+  function fitAll() {
+    document.querySelectorAll(".workflow-html").forEach(fitWorkflow);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", fitAll);
+  } else {
+    fitAll();
+  }
+  window.addEventListener("resize", fitAll);
+})();
+</script>

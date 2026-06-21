@@ -1,0 +1,316 @@
+record_type	engine	engine_label	holdout_dataset	top_k_recurrence	top_k_metastasis	is_baseline	n_recurrence_genes	inner_cv_cindex	outer_cindex_lodo	outer_auroc_lodo	cindex_external	auroc_external	mean_cindex_lodo_baseline	mean_cindex_lodo_full	delta_lodo_full_minus_baseline	model_id	cindex_external_baseline	delta_cindex_external_full_minus_baseline
+official_locked	penalized_cox	Penalized Cox	NA	15	5	NA	15	0.703795260100632	0.665	0.634022238102698	0.687	0.625508777380767	0.67	0.665	-0.005	Clinical+Recurrence_top15+Metastasis_top5 (official locked K)	0.686	0.001
+lodo_holdout_fold	penalized_cox	Penalized Cox	GSE30219	15	5	FALSE	15	0.699960419490143	0.6998730964467	0.673280423280423	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top5 (global grid K)	NA	NA
+lodo_holdout_fold	penalized_cox	Penalized Cox	GSE31210	15	5	FALSE	15	0.640370383165491	0.6837451824983	0.702345679012345	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top5 (global grid K)	NA	NA
+lodo_holdout_fold	penalized_cox	Penalized Cox	GSE37745	15	5	FALSE	15	0.777743675339977	0.636251541307028	0.575498575498575	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top5 (global grid K)	NA	NA
+lodo_holdout_fold	penalized_cox	Penalized Cox	GSE50081	15	5	FALSE	15	0.697106562406915	0.612192786466645	0.584964274619447	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top5 (global grid K)	NA	NA
+lodo_holdout_fold	penalized_cox	Penalized Cox	GSE30219	15	NA	TRUE	15	NA	0.708121827411168	0.683201058201058	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	penalized_cox	Penalized Cox	GSE31210	15	NA	TRUE	15	NA	0.684198594423033	0.703333333333333	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	penalized_cox	Penalized Cox	GSE37745	15	NA	TRUE	15	NA	0.643649815043157	0.578347578347578	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	penalized_cox	Penalized Cox	GSE50081	15	NA	TRUE	15	NA	0.614427066709224	0.585274930102516	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE30219	5	5	NA	NA	0.669134495800053	NA	0.701750128222558	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE30219	10	5	NA	NA	0.690671541083366	NA	0.708232707719238	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE30219	15	5	NA	NA	0.699960419490143	NA	0.71468823325747	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE30219	5	10	NA	NA	0.683328151511703	NA	0.709282782172447	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE30219	10	10	NA	NA	0.701678444077139	NA	0.708320584650014	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE30219	15	10	NA	NA	0.694817009184545	NA	0.711213518240005	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE30219	5	15	NA	NA	0.683112906645984	NA	0.709044754372279	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE30219	10	15	NA	NA	0.703007427695982	NA	0.709669893509414	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE30219	15	15	NA	NA	0.715228794624186	NA	0.71927891953174	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE31210	5	5	NA	NA	0.60449485998627	NA	0.599509037754887	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE31210	10	5	NA	NA	0.630648569099234	NA	0.594143890620764	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE31210	15	5	NA	NA	0.640370383165491	NA	0.584553262702931	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE31210	5	10	NA	NA	0.608393303227831	NA	0.601737886283546	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE31210	10	10	NA	NA	0.628509745259798	NA	0.613599750384025	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE31210	15	10	NA	NA	0.639544515007626	NA	0.58783171817114	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE31210	5	15	NA	NA	0.605080957907908	NA	0.598648822701124	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE31210	10	15	NA	NA	0.624604805875291	NA	0.612024496626608	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE31210	15	15	NA	NA	0.638688319967234	NA	0.587890451341827	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE37745	5	5	NA	NA	0.747046576101032	NA	0.676146680991917	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE37745	10	5	NA	NA	0.771366387989789	NA	0.694315010547761	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE37745	15	5	NA	NA	0.777743675339977	NA	0.701574184540362	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE37745	5	10	NA	NA	0.738916580275785	NA	0.676083021645249	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE37745	10	10	NA	NA	0.762274100707921	NA	0.688353795250322	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE37745	15	10	NA	NA	0.766833686362485	NA	0.696224117346981	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE37745	5	15	NA	NA	0.733616347581554	NA	0.674115955775131	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE37745	10	15	NA	NA	0.759671159487636	NA	0.685637792996356	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE37745	15	15	NA	NA	0.763609189926719	NA	0.693040093066396	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE50081	5	5	NA	NA	0.643499591104368	NA	0.632905992192472	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE50081	10	5	NA	NA	0.68217392607468	NA	0.672101683464213	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE50081	15	5	NA	NA	0.697106562406915	NA	0.691888721490698	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE50081	5	10	NA	NA	0.640748861480238	NA	0.631157695781704	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE50081	10	10	NA	NA	0.665365041156705	NA	0.656404775557972	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE50081	15	10	NA	NA	0.683093605937669	NA	0.679666371342816	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE50081	5	15	NA	NA	0.638165213770497	NA	0.628133180084833	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE50081	10	15	NA	NA	0.663155030431529	NA	0.654972087323589	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	penalized_cox	Penalized Cox	GSE50081	15	15	NA	NA	0.679294222675698	NA	0.67516797985723	NA	NA	NA	NA	NA	NA	NA	NA
+official_locked	lasso_cox	Lasso Cox	NA	15	5	NA	15	0.668288666993719	0.634	0.626053466944271	0.5	0.5	0.659	0.634	-0.025	Clinical+Recurrence_top15+Metastasis_top15 (official locked K)	0.5	0
+lodo_holdout_fold	lasso_cox	Lasso Cox	GSE30219	15	15	FALSE	15	0.673042740516781	0.696700507614213	0.664021164021164	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top15 (global grid K)	NA	NA
+lodo_holdout_fold	lasso_cox	Lasso Cox	GSE31210	15	15	FALSE	15	0.591361841282322	0.669236000906824	0.689012345679011	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top15 (global grid K)	NA	NA
+lodo_holdout_fold	lasso_cox	Lasso Cox	GSE37745	15	15	FALSE	15	0.704392034493086	0.600493218249075	0.544159544159544	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top15 (global grid K)	NA	NA
+lodo_holdout_fold	lasso_cox	Lasso Cox	GSE50081	15	15	FALSE	15	0.704358051682687	0.633897223108841	0.607020813917366	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top15 (global grid K)	NA	NA
+lodo_holdout_fold	lasso_cox	Lasso Cox	GSE30219	15	NA	TRUE	15	NA	0.696700507614213	0.664021164021164	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	lasso_cox	Lasso Cox	GSE31210	15	NA	TRUE	15	NA	0.669236000906824	0.689012345679011	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	lasso_cox	Lasso Cox	GSE37745	15	NA	TRUE	15	NA	0.600493218249075	0.544159544159544	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	lasso_cox	Lasso Cox	GSE50081	15	NA	TRUE	15	NA	0.633258857325247	0.60515688101895	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE30219	5	5	NA	NA	0.660275025508026	NA	0.66761991198813	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE30219	10	5	NA	NA	0.636780594171475	NA	0.656688068458342	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE30219	15	5	NA	NA	0.672432545620616	NA	0.676531562746493	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE30219	5	10	NA	NA	0.660590981274219	NA	0.667771083567873	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE30219	10	10	NA	NA	0.636780594171475	NA	0.656688068458342	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE30219	15	10	NA	NA	0.672755784881684	NA	0.676674013163904	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE30219	5	15	NA	NA	0.606007647940886	NA	0.637771083567873	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE30219	10	15	NA	NA	0.595120839037194	NA	0.612931056881781	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE30219	15	15	NA	NA	0.673042740516781	NA	0.676354596508353	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE31210	5	5	NA	NA	0.538317757009346	NA	0.50247619047619	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE31210	10	5	NA	NA	0.575941280534658	NA	0.539668202764977	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE31210	15	5	NA	NA	0.591361841282322	NA	0.539287250384024	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE31210	5	10	NA	NA	0.538317757009346	NA	0.50247619047619	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE31210	10	10	NA	NA	0.575941280534658	NA	0.539668202764977	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE31210	15	10	NA	NA	0.591361841282322	NA	0.539287250384024	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE31210	5	15	NA	NA	0.538317757009346	NA	0.50247619047619	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE31210	10	15	NA	NA	0.575941280534658	NA	0.539668202764977	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE31210	15	15	NA	NA	0.591361841282322	NA	0.539287250384024	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE37745	5	5	NA	NA	0.66173481904452	NA	0.613187863080028	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE37745	10	5	NA	NA	0.690436272651568	NA	0.640881807133005	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE37745	15	5	NA	NA	0.70455165141248	NA	0.660206250989425	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE37745	5	10	NA	NA	0.661574305400861	NA	0.6126081529351	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE37745	10	10	NA	NA	0.690117038812782	NA	0.640450772650247	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE37745	15	10	NA	NA	0.702324851030554	NA	0.658370064281842	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE37745	5	15	NA	NA	0.66173481904452	NA	0.613187863080028	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE37745	10	15	NA	NA	0.690117038812782	NA	0.640450772650247	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE37745	15	15	NA	NA	0.704392034493086	NA	0.659775216506666	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE50081	5	5	NA	NA	0.618973476537361	NA	0.612300302190268	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE50081	10	5	NA	NA	0.6811468021005	NA	0.675280556018664	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE50081	15	5	NA	NA	0.702154194933376	NA	0.700963627813401	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE50081	5	10	NA	NA	0.618973476537361	NA	0.612300302190268	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE50081	10	10	NA	NA	0.68189193994105	NA	0.674885299101668	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE50081	15	10	NA	NA	0.703429259113028	NA	0.698786577810264	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE50081	5	15	NA	NA	0.618973476537361	NA	0.612300302190268	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE50081	10	15	NA	NA	0.680963147371391	NA	0.674885299101668	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	lasso_cox	Lasso Cox	GSE50081	15	15	NA	NA	0.704358051682687	NA	0.699580228603915	NA	NA	NA	NA	NA	NA	NA	NA
+official_locked	ridge_cox	Ridge Cox	NA	15	5	NA	15	0.702826244989107	0.663	0.632232948813408	0.688	0.625664129252757	0.669	0.663	-0.006	Clinical+Recurrence_top15+Metastasis_top10 (official locked K)	0.687	0.00099999999999989
+lodo_holdout_fold	ridge_cox	Ridge Cox	GSE30219	15	10	FALSE	15	0.698048457575879	0.6998730964467	0.673280423280423	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top10 (global grid K)	NA	NA
+lodo_holdout_fold	ridge_cox	Ridge Cox	GSE31210	15	10	FALSE	15	0.65167950168489	0.684878712310134	0.704197530864197	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top10 (global grid K)	NA	NA
+lodo_holdout_fold	ridge_cox	Ridge Cox	GSE37745	15	10	FALSE	15	0.771119890004883	0.642416769420469	0.575498575498575	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top10 (global grid K)	NA	NA
+lodo_holdout_fold	ridge_cox	Ridge Cox	GSE50081	15	10	FALSE	15	0.690457130690774	0.605489945738908	0.575955265610438	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top10 (global grid K)	NA	NA
+lodo_holdout_fold	ridge_cox	Ridge Cox	GSE30219	15	NA	TRUE	15	NA	0.708121827411168	0.682539682539682	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	ridge_cox	Ridge Cox	GSE31210	15	NA	TRUE	15	NA	0.682725005667649	0.702222222222222	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	ridge_cox	Ridge Cox	GSE37745	15	NA	TRUE	15	NA	0.643649815043157	0.575498575498575	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	ridge_cox	Ridge Cox	GSE50081	15	NA	TRUE	15	NA	0.612192786466645	0.586206896551724	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE30219	5	5	NA	NA	0.671022039441257	NA	0.700883139185872	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE30219	10	5	NA	NA	0.689402197017226	NA	0.706606728672649	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE30219	15	5	NA	NA	0.693733765614708	NA	0.7111530528908	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE30219	5	10	NA	NA	0.681869160608964	NA	0.706354403410715	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE30219	10	10	NA	NA	0.692503350633818	NA	0.703068253780978	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE30219	15	10	NA	NA	0.698048457575879	NA	0.710649006692067	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE30219	5	15	NA	NA	0.687954034765352	NA	0.710159779498128	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE30219	10	15	NA	NA	0.696573709160409	NA	0.70488478505711	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE30219	15	15	NA	NA	0.696915186005822	NA	0.708853876604125	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE31210	5	5	NA	NA	0.608390581186416	NA	0.598839319598807	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE31210	10	5	NA	NA	0.632763594821321	NA	0.614851706273907	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE31210	15	5	NA	NA	0.64058140749195	NA	0.606224138580163	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE31210	5	10	NA	NA	0.616163477691931	NA	0.595599475542905	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE31210	10	10	NA	NA	0.634619106542795	NA	0.61435015511581	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE31210	15	10	NA	NA	0.65167950168489	NA	0.607857799840366	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE31210	5	15	NA	NA	0.624668806200495	NA	0.603842401207795	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE31210	10	15	NA	NA	0.636215578519239	NA	0.621413127616638	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE31210	15	15	NA	NA	0.645509708318137	NA	0.608133715851932	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE37745	5	5	NA	NA	0.755467757713675	NA	0.67968599881091	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE37745	10	5	NA	NA	0.774749047103154	NA	0.692050528823384	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE37745	15	5	NA	NA	0.779619858278904	NA	0.699405070327428	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE37745	5	10	NA	NA	0.746075259838203	NA	0.674287925785518	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE37745	10	10	NA	NA	0.768972501429216	NA	0.690161975822903	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE37745	15	10	NA	NA	0.771119890004883	NA	0.693863913228155	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE37745	5	15	NA	NA	0.743965858745762	NA	0.674175480148954	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE37745	10	15	NA	NA	0.763616104446488	NA	0.686814659114164	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE37745	15	15	NA	NA	0.766365595422946	NA	0.694027441424957	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE50081	5	5	NA	NA	0.646303714230432	NA	0.637757294976853	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE50081	10	5	NA	NA	0.679762371758821	NA	0.669806091221569	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE50081	15	5	NA	NA	0.697012009383877	NA	0.691349001785245	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE50081	5	10	NA	NA	0.640391025561685	NA	0.630570002021752	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE50081	10	10	NA	NA	0.673730216843133	NA	0.664869372503386	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE50081	15	10	NA	NA	0.690457130690774	NA	0.683512422875464	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE50081	5	15	NA	NA	0.64153362359287	NA	0.63092197832156	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE50081	10	15	NA	NA	0.669892649733539	NA	0.65992817591873	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	ridge_cox	Ridge Cox	GSE50081	15	15	NA	NA	0.68718714913919	NA	0.680496368363231	NA	NA	NA	NA	NA	NA	NA	NA
+official_locked	elastic_net_cox	Elastic-net Cox	NA	15	5	NA	15	0.70445345117262	0.668	0.636035708406398	0.688	0.62765263321423	0.67	0.668	-0.002	Clinical+Recurrence_top15+Metastasis_top5 (official locked K)	0.688	0
+lodo_holdout_fold	elastic_net_cox	Elastic-net Cox	GSE30219	15	5	FALSE	15	0.695582248836177	0.722	0.709	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top5 (global grid K)	NA	NA
+lodo_holdout_fold	elastic_net_cox	Elastic-net Cox	GSE31210	15	5	FALSE	15	0.639992119164418	0.704	0.724	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top5 (global grid K)	NA	NA
+lodo_holdout_fold	elastic_net_cox	Elastic-net Cox	GSE37745	15	5	FALSE	15	0.778795328875124	0.633	0.571	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top5 (global grid K)	NA	NA
+lodo_holdout_fold	elastic_net_cox	Elastic-net Cox	GSE50081	15	5	FALSE	15	0.703444107814762	0.613	0.584	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top5 (global grid K)	NA	NA
+lodo_holdout_fold	elastic_net_cox	Elastic-net Cox	GSE30219	15	NA	TRUE	15	NA	0.708121827411168	0.681878306878307	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	elastic_net_cox	Elastic-net Cox	GSE31210	15	NA	TRUE	15	NA	0.68476535932895	0.70358024691358	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	elastic_net_cox	Elastic-net Cox	GSE37745	15	NA	TRUE	15	NA	0.643649815043157	0.576923076923077	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	elastic_net_cox	Elastic-net Cox	GSE50081	15	NA	TRUE	15	NA	0.612192786466645	0.586206896551724	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE30219	5	5	NA	NA	0.661990302031395	NA	0.69488878294016	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE30219	10	5	NA	NA	0.688906026235955	NA	0.70751237748188	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE30219	15	5	NA	NA	0.695582248836177	NA	0.709832216451735	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE30219	5	10	NA	NA	0.683960053530856	NA	0.709032538170975	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE30219	10	10	NA	NA	0.692335826107262	NA	0.706752803899174	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE30219	15	10	NA	NA	0.691642142627613	NA	0.712219551154114	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE30219	5	15	NA	NA	0.685576213876327	NA	0.710406515817468	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE30219	10	15	NA	NA	0.694899769644277	NA	0.709614286669268	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE30219	15	15	NA	NA	0.689072652769572	NA	0.708825622269672	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE31210	5	5	NA	NA	0.606155302709525	NA	0.600691050344869	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE31210	10	5	NA	NA	0.628885857197845	NA	0.590683076187464	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE31210	15	5	NA	NA	0.639992119164418	NA	0.586045529502123	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE31210	5	10	NA	NA	0.607971938978373	NA	0.598378047724466	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE31210	10	10	NA	NA	0.625400063354705	NA	0.589847438706665	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE31210	15	10	NA	NA	0.63027016534256	NA	0.561243505466703	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE31210	5	15	NA	NA	0.609508647084727	NA	0.603645358950032	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE31210	10	15	NA	NA	0.623547409477249	NA	0.610738375726635	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE31210	15	15	NA	NA	0.636838430597533	NA	0.605842484036625	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE37745	5	5	NA	NA	0.748215750722276	NA	0.67496098332725	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE37745	10	5	NA	NA	0.771813391454928	NA	0.691476367767765	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE37745	15	5	NA	NA	0.778795328875124	NA	0.699080472525319	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE37745	5	10	NA	NA	0.744333469252407	NA	0.677595032477322	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE37745	10	10	NA	NA	0.771729840614352	NA	0.693321692751225	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE37745	15	10	NA	NA	0.776016310902867	NA	0.699237286559664	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE37745	5	15	NA	NA	0.742516642328368	NA	0.678774633729045	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE37745	10	15	NA	NA	0.768350742893449	NA	0.693097284753204	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE37745	15	15	NA	NA	0.774741797356862	NA	0.700570028156127	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE50081	5	5	NA	NA	0.646410290064998	NA	0.635357027636228	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE50081	10	5	NA	NA	0.689765827350229	NA	0.68039410974291	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE50081	15	5	NA	NA	0.703444107814762	NA	0.697439491806915	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE50081	5	10	NA	NA	0.64630149575463	NA	0.635599908113662	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE50081	10	10	NA	NA	0.678184777658855	NA	0.669890856110365	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE50081	15	10	NA	NA	0.693767076275927	NA	0.688804245836842	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE50081	5	15	NA	NA	0.645725609803001	NA	0.63408570459498	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE50081	10	15	NA	NA	0.668750749209943	NA	0.660027958518878	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	elastic_net_cox	Elastic-net Cox	GSE50081	15	15	NA	NA	0.687384227024761	NA	0.682757773893053	NA	NA	NA	NA	NA	NA	NA	NA
+official_locked	random_survival_forest	Random survival forest	NA	15	10	NA	15	0.722846295772745	0.63	0.63137833844012	0.666	0.63686499922324	0.638	0.63	-0.00800000000000001	Clinical+Recurrence_top15+Metastasis_top15 (official locked K)	0.67	-0.004
+lodo_holdout_fold	random_survival_forest	Random survival forest	GSE30219	15	15	FALSE	15	0.710486794756238	0.678616751269036	0.664351851851852	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top15 (global grid K)	NA	NA
+lodo_holdout_fold	random_survival_forest	Random survival forest	GSE31210	15	15	FALSE	15	0.683158198119943	0.70239174790297	0.723024691358025	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top15 (global grid K)	NA	NA
+lodo_holdout_fold	random_survival_forest	Random survival forest	GSE37745	15	15	FALSE	15	0.777172624887511	0.598027127003699	0.552706552706553	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top15 (global grid K)	NA	NA
+lodo_holdout_fold	random_survival_forest	Random survival forest	GSE50081	15	15	FALSE	15	0.720567565327287	0.586498563676987	0.585430257844051	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top15 (global grid K)	NA	NA
+lodo_holdout_fold	random_survival_forest	Random survival forest	GSE30219	15	NA	TRUE	15	NA	0.650380710659898	0.658399470899471	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	random_survival_forest	Random survival forest	GSE31210	15	NA	TRUE	15	NA	0.699161187939243	0.714259259259259	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	random_survival_forest	Random survival forest	GSE37745	15	NA	TRUE	15	NA	0.594327990135635	0.548433048433049	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	random_survival_forest	Random survival forest	GSE50081	15	NA	TRUE	15	NA	0.56910309607405	0.555917986952469	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE30219	5	5	NA	NA	0.711950348271294	NA	0.710949277712471	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE30219	10	5	NA	NA	0.694253017023025	NA	0.682291671141733	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE30219	15	5	NA	NA	0.708814672384367	NA	0.687816152515166	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE30219	5	10	NA	NA	0.708383072997995	NA	0.703892703059028	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE30219	10	10	NA	NA	0.707518626679883	NA	0.693776635074871	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE30219	15	10	NA	NA	0.707682220186178	NA	0.681975629191395	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE30219	5	15	NA	NA	0.717217628400801	NA	0.7065573927878	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE30219	10	15	NA	NA	0.711352515582856	NA	0.691908608238818	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE30219	15	15	NA	NA	0.710486794756238	NA	0.679875719518476	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE31210	5	5	NA	NA	0.655198276163665	NA	0.565574048974429	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE31210	10	5	NA	NA	0.648882753579808	NA	0.581610595313394	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE31210	15	5	NA	NA	0.662690688902843	NA	0.596975966461854	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE31210	5	10	NA	NA	0.668491713205895	NA	0.598524361088521	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE31210	10	10	NA	NA	0.666868160607756	NA	0.589584573883317	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE31210	15	10	NA	NA	0.672880228102322	NA	0.595220544938406	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE31210	5	15	NA	NA	0.672808608195837	NA	0.566020520842746	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE31210	10	15	NA	NA	0.67174661032443	NA	0.589462623490256	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE31210	15	15	NA	NA	0.683158198119943	NA	0.595258024984187	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE37745	5	5	NA	NA	0.739688736195103	NA	0.660266526392945	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE37745	10	5	NA	NA	0.765209086649412	NA	0.688898177924935	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE37745	15	5	NA	NA	0.769327746015469	NA	0.693369834717725	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE37745	5	10	NA	NA	0.73505844537554	NA	0.65197979099071	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE37745	10	10	NA	NA	0.763283078819391	NA	0.687113445130703	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE37745	15	10	NA	NA	0.769847682275241	NA	0.689130887151281	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE37745	5	15	NA	NA	0.735663479618151	NA	0.657479042199973	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE37745	10	15	NA	NA	0.765516927918611	NA	0.68816119944039	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE37745	15	15	NA	NA	0.777172624887511	NA	0.694997251325923	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE50081	5	5	NA	NA	0.67957878990027	NA	0.68082509679435	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE50081	10	5	NA	NA	0.717748699673244	NA	0.727437431179215	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE50081	15	5	NA	NA	0.729882632889468	NA	0.729787087323238	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE50081	5	10	NA	NA	0.672074992872414	NA	0.672099242016168	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE50081	10	10	NA	NA	0.718283463452369	NA	0.726091944275887	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE50081	15	10	NA	NA	0.7254992539177	NA	0.726349744925016	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE50081	5	15	NA	NA	0.67525065199728	NA	0.676796739311346	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE50081	10	15	NA	NA	0.714617623089092	NA	0.721679928605655	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	random_survival_forest	Random survival forest	GSE50081	15	15	NA	NA	0.720567565327287	NA	0.722436359355392	NA	NA	NA	NA	NA	NA	NA	NA
+official_locked	xgboost_survival_cox	XGBoost survival Cox	NA	15	15	NA	10	0.662377905207759	0.587	0.579682601557602	0.603	0.548796022992077	0.615	0.587	-0.028	Clinical+Recurrence_top10+Metastasis_top15 (official locked K)	0.613	-0.01
+lodo_holdout_fold	xgboost_survival_cox	XGBoost survival Cox	GSE30219	10	15	FALSE	10	0.629277408318754	0.587880710659898	0.581679894179894	NA	NA	NA	NA	NA	Clinical+Recurrence_top10+Metastasis_top15 (global grid K)	NA	NA
+lodo_holdout_fold	xgboost_survival_cox	XGBoost survival Cox	GSE31210	10	15	FALSE	10	0.688308451020467	0.64446837451825	0.650925925925926	NA	NA	NA	NA	NA	Clinical+Recurrence_top10+Metastasis_top15 (global grid K)	NA	NA
+lodo_holdout_fold	xgboost_survival_cox	XGBoost survival Cox	GSE37745	10	15	FALSE	10	0.642278682122058	0.567200986436498	0.545584045584045	NA	NA	NA	NA	NA	Clinical+Recurrence_top10+Metastasis_top15 (global grid K)	NA	NA
+lodo_holdout_fold	xgboost_survival_cox	XGBoost survival Cox	GSE50081	10	15	FALSE	10	0.689647079369755	0.562879029684009	0.540540540540541	NA	NA	NA	NA	NA	Clinical+Recurrence_top10+Metastasis_top15 (global grid K)	NA	NA
+lodo_holdout_fold	xgboost_survival_cox	XGBoost survival Cox	GSE30219	10	NA	TRUE	10	NA	0.598350253807107	0.604828042328042	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top10	NA	NA
+lodo_holdout_fold	xgboost_survival_cox	XGBoost survival Cox	GSE31210	10	NA	TRUE	10	NA	0.629562457492632	0.634197530864198	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top10	NA	NA
+lodo_holdout_fold	xgboost_survival_cox	XGBoost survival Cox	GSE37745	10	NA	TRUE	10	NA	0.599260172626387	0.578347578347578	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top10	NA	NA
+lodo_holdout_fold	xgboost_survival_cox	XGBoost survival Cox	GSE50081	10	NA	TRUE	10	NA	0.598308330673476	0.573625349487419	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top10	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE30219	5	5	NA	NA	0.631171438467362	NA	0.61455986555134	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE30219	10	5	NA	NA	0.610404483638582	NA	0.593764325932219	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE30219	15	5	NA	NA	0.606204753465324	NA	0.573749780096728	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE30219	5	10	NA	NA	0.633664325877953	NA	0.607052242955772	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE30219	10	10	NA	NA	0.616165361950772	NA	0.594070742657977	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE30219	15	10	NA	NA	0.600709659366182	NA	0.576645749874388	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE30219	5	15	NA	NA	0.657182652841757	NA	0.606638797066072	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE30219	10	15	NA	NA	0.629277408318754	NA	0.591696336482929	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE30219	15	15	NA	NA	0.616400324125789	NA	0.572258629441173	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE31210	5	5	NA	NA	0.639549843682511	NA	0.55032757861209	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE31210	10	5	NA	NA	0.688401113268775	NA	0.581338461190928	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE31210	15	5	NA	NA	0.685909825102845	NA	0.578301579771694	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE31210	5	10	NA	NA	0.661422719962948	NA	0.613863652450227	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE31210	10	10	NA	NA	0.687505648882484	NA	0.59887712531249	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE31210	15	10	NA	NA	0.675036445314315	NA	0.611254401222855	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE31210	5	15	NA	NA	0.65284656594735	NA	0.577610742146321	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE31210	10	15	NA	NA	0.688308451020467	NA	0.585901520285533	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE31210	15	15	NA	NA	0.677554281604872	NA	0.586319529155748	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE37745	5	5	NA	NA	0.630279344933252	NA	0.597583217361864	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE37745	10	5	NA	NA	0.627280695009231	NA	0.565130657635854	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE37745	15	5	NA	NA	0.623188461684927	NA	0.578121787022697	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE37745	5	10	NA	NA	0.608484101465903	NA	0.54334722688907	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE37745	10	10	NA	NA	0.609165833952579	NA	0.562988985661739	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE37745	15	10	NA	NA	0.609409658907555	NA	0.554691014568336	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE37745	5	15	NA	NA	0.643407777500636	NA	0.58810584699459	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE37745	10	15	NA	NA	0.642278682122058	NA	0.595445998268888	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE37745	15	15	NA	NA	0.645784405214605	NA	0.609156493846716	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE50081	5	5	NA	NA	0.620538354107762	NA	0.614079794868599	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE50081	10	5	NA	NA	0.685572379120148	NA	0.686382651093202	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE50081	15	5	NA	NA	0.718534402202588	NA	0.720149042234343	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE50081	5	10	NA	NA	0.596956903242364	NA	0.601959639290388	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE50081	10	10	NA	NA	0.677779058900815	NA	0.680135319353149	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE50081	15	10	NA	NA	0.698938248943152	NA	0.70881020278155	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE50081	5	15	NA	NA	0.630737254090544	NA	0.638309213111175	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE50081	10	15	NA	NA	0.689647079369755	NA	0.691758221685555	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	xgboost_survival_cox	XGBoost survival Cox	GSE50081	15	15	NA	NA	0.702282268912175	NA	0.712835660772391	NA	NA	NA	NA	NA	NA	NA	NA
+official_locked	logistic_regression	Logistic regression	NA	15	5	NA	15	0.678727702775379	0.649	0.604173388684883	0.66	0.614913779711045	0.658	0.649	-0.00900000000000001	Clinical+Recurrence_top15+Metastasis_top5 (official locked K)	0.66	0
+lodo_holdout_fold	logistic_regression	Logistic regression	GSE30219	15	5	FALSE	15	0.652975531375915	0.668147208121827	0.632822477650064	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top5 (global grid K)	NA	NA
+lodo_holdout_fold	logistic_regression	Logistic regression	GSE31210	15	5	FALSE	15	0.604194153297871	0.635003400589435	0.652716049382716	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top5 (global grid K)	NA	NA
+lodo_holdout_fold	logistic_regression	Logistic regression	GSE37745	15	5	FALSE	15	0.757134286307994	0.6288532675709	0.56980056980057	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top5 (global grid K)	NA	NA
+lodo_holdout_fold	logistic_regression	Logistic regression	GSE50081	15	5	FALSE	15	0.700606840119737	0.593999361634216	0.561354457906182	NA	NA	NA	NA	NA	Clinical+Recurrence_top15+Metastasis_top5 (global grid K)	NA	NA
+lodo_holdout_fold	logistic_regression	Logistic regression	GSE30219	15	NA	TRUE	15	NA	0.70241116751269	0.671775223499361	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	logistic_regression	Logistic regression	GSE31210	15	NA	TRUE	15	NA	0.659600997506234	0.679135802469135	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	logistic_regression	Logistic regression	GSE37745	15	NA	TRUE	15	NA	0.63501849568434	0.57977207977208	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+lodo_holdout_fold	logistic_regression	Logistic regression	GSE50081	15	NA	TRUE	15	NA	0.593999361634216	0.563529046287667	NA	NA	NA	NA	NA	Baseline: Clinical+Recurrence_top15	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE30219	5	5	NA	NA	0.636553089456183	NA	0.685224373989691	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE30219	10	5	NA	NA	0.643528108271334	NA	0.687769199616527	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE30219	15	5	NA	NA	0.652975531375915	NA	0.697986449004076	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE30219	5	10	NA	NA	0.659070608121649	NA	0.69762666507915	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE30219	10	10	NA	NA	0.654221157131129	NA	0.69128054895811	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE30219	15	10	NA	NA	0.661957930622622	NA	0.703818946262561	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE30219	5	15	NA	NA	0.662032488375218	NA	0.699797604693698	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE30219	10	15	NA	NA	0.65395914404881	NA	0.690501829998194	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE30219	15	15	NA	NA	0.657905725187243	NA	0.70188668537043	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE31210	5	5	NA	NA	0.55631951167085	NA	0.586052555249069	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE31210	10	5	NA	NA	0.589019607387112	NA	0.598553575091763	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE31210	15	5	NA	NA	0.604194153297871	NA	0.573436822309569	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE31210	5	10	NA	NA	0.561571891112855	NA	0.589408169181651	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE31210	10	10	NA	NA	0.585342551269519	NA	0.59082468947329	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE31210	15	10	NA	NA	0.605873685203094	NA	0.583931638333915	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE31210	5	15	NA	NA	0.572613197452004	NA	0.598071323051162	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE31210	10	15	NA	NA	0.592366327642909	NA	0.593072154137738	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE31210	15	15	NA	NA	0.614016826835459	NA	0.587736634794865	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE37745	5	5	NA	NA	0.723135262516938	NA	0.673016970152769	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE37745	10	5	NA	NA	0.748148956275788	NA	0.685230028716444	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE37745	15	5	NA	NA	0.757134286307994	NA	0.695538621813251	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE37745	5	10	NA	NA	0.714249078838151	NA	0.668943725599258	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE37745	10	10	NA	NA	0.736907460861015	NA	0.680471487593454	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE37745	15	10	NA	NA	0.745505085194822	NA	0.692445774483961	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE37745	5	15	NA	NA	0.714250411200088	NA	0.67133453219407	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE37745	10	15	NA	NA	0.737807737788166	NA	0.684058487536386	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE37745	15	15	NA	NA	0.747009404538341	NA	0.695487363334591	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE50081	5	5	NA	NA	0.641910206953725	NA	0.637685102658707	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE50081	10	5	NA	NA	0.689146798898569	NA	0.683527276328428	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE50081	15	5	NA	NA	0.700606840119737	NA	0.696295086677425	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE50081	5	10	NA	NA	0.636180173473216	NA	0.629929627421229	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE50081	10	10	NA	NA	0.665911398669507	NA	0.660767630906809	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE50081	15	10	NA	NA	0.687153430887294	NA	0.68354005966068	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE50081	5	15	NA	NA	0.633092026014937	NA	0.626941946527613	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE50081	10	15	NA	NA	0.666053481619509	NA	0.660582276821279	NA	NA	NA	NA	NA	NA	NA	NA
+inner_cv_kr_km	logistic_regression	Logistic regression	GSE50081	15	15	NA	NA	0.683488308249816	NA	0.678823150874023	NA	NA	NA	NA	NA	NA	NA	NA

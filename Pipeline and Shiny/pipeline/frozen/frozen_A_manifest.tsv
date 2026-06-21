@@ -1,0 +1,4 @@
+variant	n_genes	file
+top05	5	frozen_A_sig_top05_genes.tsv
+top10	10	frozen_A_sig_top10_genes.tsv
+top15	15	frozen_A_sig_top15_genes.tsv
