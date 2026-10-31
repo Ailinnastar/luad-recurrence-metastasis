@@ -5,7 +5,7 @@ Self-contained under `pipeline/`: download, integrate, model, evaluate.
 ## One command
 
 ```bash
-cd "recur inter"
+cd "Pipeline and Shiny"
 bash pipeline/run.sh
 ```
 

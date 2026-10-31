@@ -3,3 +3,11 @@
 __pycache__/
 *.pyc
 report_cache/
+.venv/
+.env
+.env.*
+!*.example
+.RData
+**/rsconnect/
+Pipeline and Shiny/pipeline/geo/
+Pipeline and Shiny/pipeline/data/
